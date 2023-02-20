@@ -35,13 +35,13 @@ Feel free to build out any helper methods if needed.
  
 
 ## Initializers, Readers, and Writers
-- ##*Author*
+- ## *Author*
 Author#initialize(name)
 An author is initialized with a name, as a string.
 A name cannot be changed after it is initialized.
 Author#name
 Returns the name of the author
-- ##*Magazine*
+- ## *Magazine*
 Magazine#initialize(name, category)
 A magazine is initialized with a name as a string and a category as a string
 The name and category of the magazine can be changed after being initialized.
@@ -51,7 +51,7 @@ Magazine#category
 Returns the category of this magazine
 Magazine.all
 Returns an array of all Magazine instances
-- ##*Article*
+- ##   *Article*
 Article#initialize(author, magazine, title)
 An article is initialized with an author as an Author object, a magazine as a Magazine object, and title as a string.
 An article cannot change its author, magazine, or title after it has been initialized.
@@ -75,7 +75,7 @@ Magazine#contributors
 Returns an array of Author instances who have written for this magazine
  
 
-Associations and Aggregate Methods
+## Associations and Aggregate Methods
 Author
 Author#add_article(magazine, title)
 Given a magazine (as Magazine instance) and a title (as a string), creates a new Article instance and associates it with that author and that magazine.
