@@ -13,6 +13,7 @@ puts article1.magazine.category # output: "Fashion"
 puts author1.magazines.map(&:name) # output: ["Fashion Weekly"]
 =end
 # require necessary files
+require "awesome_print"
 require_relative 'article'
 require_relative 'author'
 require_relative 'magazine'
@@ -20,14 +21,18 @@ require_relative 'magazine'
 # create instances of the classes
 author1 = Author.new("Jane Doe")
 author2 = Author.new("John Smith")
+awesome_print Author.all
+
 
 magazine1 = Magazine.new("Fashion Weekly", "Fashion")
 magazine2 = Magazine.new("Sports Monthly", "Sports")
+awesome_print Magazine.all
 
 article1 = Article.new(author1, magazine1, "Wakadinali release a new album")
 article2 = Article.new(author2, magazine1, "The new Lekopien Learning sytem")
 article3 = Article.new(author1, magazine2, "How to Icheck if you have Kopien points")
 article4 = Article.new(author2, magazine2, "The History of MAU MAU")
+awesome_print Article.all
 
 # use some of the methods to test the application
 puts article1.author.name # output: "Jane Doe"

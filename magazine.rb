@@ -1,4 +1,4 @@
-=begin
+=begin 
 class Magazine
     attr_reader :name, :category
   
@@ -19,7 +19,10 @@ class Magazine
     end
   end
 =end
+
+
 #trial 2 of the magazine
+
 class Magazine
     attr_reader :name, :category
   
@@ -53,6 +56,8 @@ class Magazine
                    .keys
     end
   end
+ 
+
   
 
   
